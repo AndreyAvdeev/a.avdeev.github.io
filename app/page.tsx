@@ -9,8 +9,8 @@ export default function Page() {
   const router = useRouter();
 
   return (
-    <div className="pt-16 px-4">
-      <div className="grid grid-cols-[0.8fr,1fr] items-center justify-items-center w-11/12 m-auto max-w-7xl">
+    <div className="flex items-center justify-center h-screen px-4">
+      <div className="flex items-center justify-center h-screen grid grid-cols-[0.8fr,1fr] items-center justify-items-center w-11/12 m-auto max-w-7xl">
         <div className="rounded-full bg-gray-500 shadow-[0px_0px_50px_rgba(0,0,0,0.8)] h-96 w-96 flex items-center justify-center">
           <Image src={meIcon} alt="logo" height={350} width={350} />
         </div>
@@ -28,13 +28,13 @@ export default function Page() {
           </p>
           <div className="mt-4">
             <button
-              className="bg-gray-400 text-white py-3 px-10 rounded-full border-2 border-solid  border-[#D5D5D5] hover:border-blue cursor-pointer transition"
+              className="bg-gray-400 text-white py-2 px-10 rounded-full border-2 border-solid border-[#D5D5D5] hover:border-blue cursor-pointer transition"
               onClick={() => router.push("/portfolio")}
             >
               Portfolio
             </button>
             <button
-              className="bg-gray-400 text-white py-3 px-10 ml-5 rounded-full border-2  border-solid  border-[#D5D5D5] hover:border-blue cursor-pointer transition"
+              className="bg-gray-400 text-white py-2 px-10 ml-5 rounded-full border-2 border-solid border-[#D5D5D5] hover:border-blue cursor-pointer transition"
               onClick={() => router.push("/contacts")}
             >
               Contacts

@@ -5,7 +5,7 @@ import logoIcon from "@/public/logo.svg";
 
 export default function Footer() {
   return (
-    <footer className="mt-32 px-4 sm:px-8 lg:px-12 border-t border-solid	border-gray-400 ">
+    <footer className="bg-dark px-4 sm:px-8 lg:px-12 border-t border-solid	border-gray-400 ">
       <div className="flex flex-row items-center justify-between">
         <div className="pt-3">
           <ul className="flex font-poppins text-lg items-center">
@@ -24,7 +24,7 @@ export default function Footer() {
           </ul>
         </div>
         <div className="pt-3">
-          <p className="text-gray-100">© {(new Date().getFullYear())} a.avdeev</p>
+          <p className="text-gray-100">© {new Date().getFullYear()} a.avdeev</p>
         </div>
       </div>
     </footer>
