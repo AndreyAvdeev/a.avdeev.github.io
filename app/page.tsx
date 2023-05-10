@@ -1,8 +1,13 @@
+"use client";
+
+import { useRouter } from "next/navigation";
 import Image from "next/image";
 
 import meIcon from "@/public/me.png";
 
 export default function Page() {
+  const router = useRouter();
+
   return (
     <div className="pt-16 px-4">
       <div className="grid grid-cols-[0.8fr,1fr] items-center justify-items-center w-11/12 m-auto max-w-7xl">
@@ -22,10 +27,16 @@ export default function Page() {
             mi !
           </p>
           <div className="mt-4">
-            <button className="bg-gray-400 py-3 px-5 rounded-full border border-solid  border-[#D5D5D5] hover:border border-solid	border-blue cursor-pointer transition">
+            <button
+              className="bg-gray-400 text-white py-3 px-10 rounded-full border-2 border-solid  border-[#D5D5D5] hover:border-blue cursor-pointer transition"
+              onClick={() => router.push("/portfolio")}
+            >
               Portfolio
             </button>
-            <button className="bg-gray-400 py-3 px-5 ml-5 border  border-solid  border-[#D5D5D5] rounded-full hover:border border-solid	border-blue cursor-pointer transition">
+            <button
+              className="bg-gray-400 text-white py-3 px-10 ml-5 rounded-full border-2  border-solid  border-[#D5D5D5] hover:border-blue cursor-pointer transition"
+              onClick={() => router.push("/contacts")}
+            >
               Contacts
             </button>
           </div>
