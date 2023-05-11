@@ -11,8 +11,8 @@ export default function Page() {
   return (
     <div className="flex items-center justify-center h-screen px-4">
       <div className="flex items-center justify-center h-screen grid grid-cols-[0.8fr,1fr] items-center justify-items-center w-11/12 m-auto max-w-7xl">
-        <div className="rounded-full bg-gray-500 shadow-[0px_0px_50px_rgba(0,0,0,0.8)] h-96 w-96 flex items-center justify-center">
-          <Image src={meIcon} alt="logo" height={350} width={350} />
+        <div className="rounded-full bg-gray-500 shadow-[0px_0px_50px_rgba(0,0,0,0.8)] h-80 w-80 flex items-center justify-center">
+          <Image src={meIcon} alt="logo" height={290} width={290} />
         </div>
         <div className="pr-10 md:w-50 lg:w-100 xl:w-30">
           <p className="font-poppins text-lg text-gray-300">
