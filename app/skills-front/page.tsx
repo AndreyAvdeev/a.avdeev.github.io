@@ -2,6 +2,7 @@
 
 import { useRouter } from "next/navigation";
 import Image from "next/image";
+import ProgressBar from "@/components/ProgressBar";
 
 import homeIcon from "@/public/home.svg";
 import monitorIcon from "@/public/monitor.svg";
@@ -91,8 +92,14 @@ export default function FrontSkills() {
             Coding Skills
           </h2>
           <div className="h-0.5 bg-gray-450 w-16 before:content-[''] before:block before:h-0.5 before:w-7 before:bg-blue"></div>
-          <div className="flex my-8 mr-8">
-       
+          <div className="mt-8">
+            <ProgressBar title="HTML" percent={99}/>
+          </div>
+          <div className="mt-8">
+            <ProgressBar title="PHP" percent={40}/>
+          </div>
+          <div className="mt-8">
+            <ProgressBar title="React" percent={98}/>
           </div>
         </article>
       </div>
