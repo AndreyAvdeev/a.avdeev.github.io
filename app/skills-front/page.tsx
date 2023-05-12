@@ -10,7 +10,7 @@ import penIcon from "@/public/pen.svg";
 
 export default function FrontSkills() {
   return (
-    <section className="pt-20">
+    <section className="py-20">
       <div className="my-2 border-t-2 border-b-2 bg-dark_light border-solid border-gray-400">
         <h1 className="text-white font-bold text-5xl text-left py-10 px-4 sm:px-8 lg:px-12">
           Frontend skills
@@ -101,6 +101,16 @@ export default function FrontSkills() {
           <div className="mt-8">
             <ProgressBar title="React" percent={98}/>
           </div>
+          <div className="mt-8">
+            <ProgressBar title="HTML" percent={99}/>
+          </div>
+          <div className="mt-8">
+            <ProgressBar title="PHP" percent={40}/>
+          </div>
+          <div className="mt-8">
+            <ProgressBar title="React" percent={98}/>
+          </div>
+          
         </article>
       </div>
     </section>

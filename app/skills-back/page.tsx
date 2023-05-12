@@ -9,7 +9,7 @@ import penIcon from "@/public/pen.svg";
 
 export default function BackSkills() {
   return (
-    <section className="pt-20">
+    <section className="py-20">
     <div className="my-2 border-t-2 border-b-2 bg-dark_light border-solid border-gray-400">
       <h1 className="text-white font-bold text-5xl text-left py-10 px-4 sm:px-8 lg:px-12">
         Backend skills
