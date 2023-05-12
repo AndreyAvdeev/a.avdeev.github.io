@@ -1,79 +1,93 @@
 "use client";
 
-import { useRouter } from "next/navigation";
+import ProgressBar from "@/components/ProgressBar";
 import Image from "next/image";
 
 import monitorIcon from "@/public/monitor.svg";
 import penIcon from "@/public/pen.svg";
 
-
 export default function BackSkills() {
   return (
     <section className="py-20">
-    <div className="my-2 border-t-2 border-b-2 bg-dark_light border-solid border-gray-400">
-      <h1 className="text-white font-bold text-5xl text-left py-10 px-4 sm:px-8 lg:px-12">
-        Backend skills
-      </h1>
-    </div>
-    <div className="grid grid-cols-2 mx-20 my-6 ">
-      <article>
-        <h2 className="text-white font-bold text-2xl text-left">
-          Co dělám ?
-        </h2>
-        <div className="h-0.5 bg-gray-450 w-24 before:content-[''] before:block before:h-0.5 before:w-10 before:bg-blue"></div>
-        <div className="flex my-8 mr-8">
-          <div className="flex mr-4">
-            <Image
-              className="self-start"
-              src={penIcon}
-              alt="logo"
-              height={72}
-              width={72}
-            />
+      <div className="my-2 border-t-2 border-b-2 bg-dark_light border-solid border-gray-400">
+        <h1 className="text-white font-bold text-5xl text-left py-10 px-4 sm:px-8 lg:px-12">
+          Backend skills
+        </h1>
+      </div>
+      <div className="grid grid-cols-2 mx-20 my-6 ">
+        <article>
+          <h2 className="text-white font-bold text-2xl text-left">
+            Co dělám ?
+          </h2>
+          <div className="h-0.5 bg-gray-450 w-24 before:content-[''] before:block before:h-0.5 before:w-10 before:bg-blue"></div>
+          <div className="flex my-8 mr-8">
+            <div className="flex mr-4">
+              <Image
+                className="self-start"
+                src={penIcon}
+                alt="logo"
+                height={72}
+                width={72}
+              />
+            </div>
+            <div>
+              <h3 className="text-white font-bold text-lg">UI / UX Design</h3>
+              <p className="text-gray-200 leading-7 mt-2">
+                Je obecně známou věcí, že člověk bývá při zkoumání grafického
+                návrhu rozptylován okolním textem, pokud mu dává nějaký smysl.
+                Úkolem Lorem Ipsum je pak nahradit klasický smysluplný text
+                vhodnou bezvýznamovou alternativou
+              </p>
+            </div>
           </div>
-          <div>
-            <h3 className="text-white font-bold text-lg">Nodejs</h3>
-            <p className="text-gray-200 leading-7 mt-2">
-              Je obecně známou věcí, že člověk bývá při zkoumání grafického
-              návrhu rozptylován okolním textem, pokud mu dává nějaký smysl.
-              Úkolem Lorem Ipsum je pak nahradit klasický smysluplný text
-              vhodnou bezvýznamovou alternativou
-            </p>
+          <div className="flex my-8 mr-8">
+            <div className="flex mr-4">
+              <Image
+                className="self-start"
+                src={monitorIcon}
+                alt="logo"
+                height={82}
+                width={82}
+              />
+            </div>
+            <div>
+              <h3 className="text-white font-bold text-lg">
+                HTML, CSS, JavaScript
+              </h3>
+              <p className="text-gray-200 leading-7 mt-2">
+                Je obecně známou věcí, že člověk bývá při zkoumání grafického
+                návrhu rozptylován okolním textem, pokud mu dává nějaký smysl.
+                Úkolem Lorem Ipsum je pak nahradit klasický smysluplný text
+                vhodnou bezvýznamovou alternativou
+              </p>
+            </div>
           </div>
-        </div>
-        <div className="flex my-8 mr-8">
-          <div className="flex mr-4">
-            <Image
-              className="self-start"
-              src={monitorIcon}
-              alt="logo"
-              height={82}
-              width={82}
-            />
+        </article>
+        <article>
+          <h2 className="text-white font-bold text-2xl text-left">
+            Coding Skills
+          </h2>
+          <div className="h-0.5 bg-gray-450 w-16 before:content-[''] before:block before:h-0.5 before:w-7 before:bg-blue"></div>
+          <div className="mt-8">
+            <ProgressBar title="HTML" percent={99} />
           </div>
-          <div>
-            <h3 className="text-white font-bold text-lg">
-              Sass, Green Sock, React
-            </h3>
-            <p className="text-gray-200 leading-7 mt-2 mb-6">
-              Je obecně známou věcí, že člověk bývá při zkoumání grafického
-              návrhu rozptylován okolním textem, pokud mu dává nějaký smysl.
-              Úkolem Lorem Ipsum je pak nahradit klasický smysluplný text
-              vhodnou bezvýznamovou alternativou
-            </p>
+          <div className="mt-8">
+            <ProgressBar title="PHP" percent={40} />
           </div>
-        </div>
-      </article>
-      <article>
-        <h2 className="text-white font-bold text-2xl text-left">
-          Coding Skills
-        </h2>
-        <div className="h-0.5 bg-gray-450 w-16 before:content-[''] before:block before:h-0.5 before:w-7 before:bg-blue"></div>
-        <div className="flex my-8 mr-8">
-     
-        </div>
-      </article>
-    </div>
-  </section>
+          <div className="mt-8">
+            <ProgressBar title="React" percent={98} />
+          </div>
+          <div className="mt-8">
+            <ProgressBar title="HTML" percent={99} />
+          </div>
+          <div className="mt-8">
+            <ProgressBar title="PHP" percent={40} />
+          </div>
+          <div className="mt-8">
+            <ProgressBar title="React" percent={98} />
+          </div>
+        </article>
+      </div>
+    </section>
   );
 }
