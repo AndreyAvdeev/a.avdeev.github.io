@@ -11,7 +11,7 @@ export default function Navbar() {
     { name: "Frontend skills", path: "/skills-front" },
     { name: "Backend skills", path: "/skills-back" },
     { name: "Portfolio", path: "/portfolio" },
-    { name: "Contacts", path: "/about" },
+    { name: "Contacts", path: "/contacts" },
   ];
 
   return (

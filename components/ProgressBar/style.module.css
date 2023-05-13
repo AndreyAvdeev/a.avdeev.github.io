@@ -1,7 +1,8 @@
 .progress{
     display: block;
-    height: 8px;
+    height: 60%;
     background-color: #007CED;
     border-radius: 10px;
+    margin: 0 3px;
     width: 100;
 }

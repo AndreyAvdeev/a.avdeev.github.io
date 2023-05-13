@@ -29,7 +29,7 @@ export default function ProgressBar({ title, percent }: progressProps) {
         <h1 className="text-white font-bold text-lg">{title}</h1>
         <p className="text-gray-200 text-sm">{progress + "%"}</p>
       </div>
-      <div className="w-full relative h-3 border-2 border-solid border-gray-400 mt-1 rounded-full">
+      <div className="w-full flex items-center h-4 border-2 border-solid border-gray-400 mt-1 rounded-full">
         <div className={style.progress} style={{ width: progress + "%" }}></div>
       </div>
     </div>
