@@ -32,7 +32,7 @@ export default function BackSkills() {
             </div>
             <div>
               <h3 className="text-white font-bold text-lg">UI / UX Design</h3>
-              <p className="text-gray-200 leading-7 mt-2">
+              <p className="text-gray-200 leading-7 mt-2 mr-5">
                 Je obecně známou věcí, že člověk bývá při zkoumání grafického
                 návrhu rozptylován okolním textem, pokud mu dává nějaký smysl.
                 Úkolem Lorem Ipsum je pak nahradit klasický smysluplný text
@@ -54,7 +54,7 @@ export default function BackSkills() {
               <h3 className="text-white font-bold text-lg">
                 HTML, CSS, JavaScript
               </h3>
-              <p className="text-gray-200 leading-7 mt-2">
+              <p className="text-gray-200 leading-7 mt-2 mr-5">
                 Je obecně známou věcí, že člověk bývá při zkoumání grafického
                 návrhu rozptylován okolním textem, pokud mu dává nějaký smysl.
                 Úkolem Lorem Ipsum je pak nahradit klasický smysluplný text
@@ -69,22 +69,16 @@ export default function BackSkills() {
           </h2>
           <div className="h-0.5 bg-gray-450 w-16 before:content-[''] before:block before:h-0.5 before:w-7 before:bg-blue"></div>
           <div className="mt-8">
-            <ProgressBar title="HTML" percent={99} />
+            <ProgressBar title="NodeJS" percent={33} icon={require('@/public/nodejs.svg')}/>
           </div>
           <div className="mt-8">
-            <ProgressBar title="PHP" percent={40} />
+            <ProgressBar title="MYSQL" percent={70} icon={require('@/public/mysql.svg')}/>
           </div>
           <div className="mt-8">
-            <ProgressBar title="React" percent={98} />
+            <ProgressBar title="ORM's (sequalize, knex)" percent={70} icon={require('@/public/orm.png')}/>
           </div>
           <div className="mt-8">
-            <ProgressBar title="HTML" percent={99} />
-          </div>
-          <div className="mt-8">
-            <ProgressBar title="PHP" percent={40} />
-          </div>
-          <div className="mt-8">
-            <ProgressBar title="React" percent={98} />
+            <ProgressBar title="Moleculer" percent={70} icon={require('@/public/moleculer.svg')}/>
           </div>
         </article>
       </div>
