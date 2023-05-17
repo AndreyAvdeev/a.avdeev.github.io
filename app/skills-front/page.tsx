@@ -23,13 +23,13 @@ export default function FrontSkills() {
           </h2>
           <div className="h-0.5 bg-gray-450 w-24 before:content-[''] before:block before:h-0.5 before:w-10 before:bg-blue"></div>
           <div className="flex my-8 mr-8">
-            <div className="flex mr-4">
+            <div className="flex mr-4 max-w-min">
               <Image
-                className="self-start"
+                className="self-start max-w-max"
                 src={penIcon}
                 alt="logo"
-                height={72}
-                width={72}
+                height={32}
+                width={32}
               />
             </div>
             <div>
@@ -45,11 +45,11 @@ export default function FrontSkills() {
           <div className="flex my-8 mr-8">
             <div className="flex mr-4">
               <Image
-                className="self-start"
+                className="self-start max-w-max"
                 src={monitorIcon}
                 alt="logo"
-                height={82}
-                width={82}
+                height={32}
+                width={32}
               />
             </div>
             <div>
@@ -67,11 +67,11 @@ export default function FrontSkills() {
           <div className="flex my-8 mr-8">
             <div className="flex mr-4">
               <Image
-                className="self-start"
+                className="self-start max-w-max"
                 src={homeIcon}
                 alt="logo"
-                height={82}
-                width={82}
+                height={32}
+                width={32}
               />
             </div>
             <div>

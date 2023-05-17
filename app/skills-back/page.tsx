@@ -23,11 +23,11 @@ export default function BackSkills() {
           <div className="flex my-8 mr-8">
             <div className="flex mr-4">
               <Image
-                className="self-start"
+                className="self-start max-w-max"
                 src={penIcon}
                 alt="logo"
-                height={72}
-                width={72}
+                height={32}
+                width={32}
               />
             </div>
             <div>
@@ -43,11 +43,11 @@ export default function BackSkills() {
           <div className="flex my-8 mr-8">
             <div className="flex mr-4">
               <Image
-                className="self-start"
+                className="self-start max-w-max"
                 src={monitorIcon}
                 alt="logo"
-                height={82}
-                width={82}
+                height={32}
+                width={32}
               />
             </div>
             <div>
