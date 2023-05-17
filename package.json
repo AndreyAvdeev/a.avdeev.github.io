@@ -8,7 +8,9 @@
   "dependencies": {
     "next": "^13.4.1",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-simple-image-viewer": "^1.2.2",
+    "sass": "^1.62.1"
   },
   "devDependencies": {
     "@types/node": "20.1.0",
