@@ -1,16 +1,17 @@
 .card {
   position: relative;
-  width: 100%;
-  height: 100%;
-  transition: all 0.3s ease;
+  transition: all 0.3s ease-in-out;
   opacity: 1;
+  img {
+    border-radius: 10px;
+  }
   &_wrapper {
-    min-width: 20rem;
-    max-width: 20rem;
+    width: 100%;
+    height: 100%;
     &:hover .card {
       cursor: pointer;
       transform: scale(1.02);
-      opacity: 0.5;
+      opacity: 0.3;
     }
     &:hover .card_overlay {
       visibility: visible;
@@ -20,14 +21,20 @@
   &_overlay {
     visibility: hidden;
     position: absolute;
+    display: flex;
     height: 100%;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     &-content {
       display: flex;
-      width: inherit;
-      height: inherit;
+      width: 100%;
+      height: 100%;
       justify-content: center;
       align-items: center;
+      a:nth-child(2) {
+        margin-left: 2rem;
+      }
     }
   }
 }

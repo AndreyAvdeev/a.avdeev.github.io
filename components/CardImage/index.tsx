@@ -17,28 +17,27 @@ interface cardImageProps {
 }
 
 export default function CardImage({ preview, hoverElements }: cardImageProps) {
-  const { src } = preview?.default;
   return (
-    <div
-      className={
-        style.card_wrapper +
-        " " +
-        "h-52 flex relative mt-1 border-gray-400 mt-1"
-      }
-    >
-      <div
-        className={style.card + " " + "rounded"}
-        style={{
-          backgroundImage: `url(${src})`,
-          backgroundPosition: "center",
-          backgroundRepeat: "no-repeat",
-        }}
-      ></div>
+    <div className={style.card_wrapper + " " + "flex relative"}>
+      <div className={style.card + " " + "rounded"}>
+        <Image src={preview} alt="logo" />
+      </div>
       <div className={style.card_overlay}>
-        <div className={style["card_overlay-content"]}>
+        <div
+          className={style["card_overlay-content"]}
+        >
           {hoverElements.map((el, index) => {
             return (
-              <Link className={'text-white mx-7 hover:text-gray-300 transition'} target={el.target} href={el.link}>{el.title}</Link>
+              <Link
+                key={index}
+                className={
+                  "bg-gray-400 text-white py-2 px-10 rounded-full border-2 border-solid border-[#D5D5D5] hover:border-blue cursor-pointer transition"
+                }
+                target={el.target}
+                href={el.link}
+              >
+                {el.title}
+              </Link>
             );
           })}
         </div>
