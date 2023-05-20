@@ -22,11 +22,32 @@ main {
   position: relative;
   height: 100%;
   min-height: 100vh;
+  overflow-y: scroll;
 }
+
 
 footer {
   position: fixed;
   width: 100%;
   height: 50px;
   bottom: 0;
+}
+
+::-webkit-scrollbar{
+  background: none;
+  width: 2px;
+}
+
+
+::-webkit-scrollbar-thumb {
+  background: #ffffff80;
+  opacity: 1;
+  border-radius: 0;
+}
+
+#ReactSimpleImageViewer{
+  padding: 3rem;
+  background: #333333;
+  z-index: 999;
+
 }

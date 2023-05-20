@@ -23,7 +23,7 @@ export default function FrontSkills() {
           </h2>
           <div className="h-0.5 bg-gray-450 w-24 before:content-[''] before:block before:h-0.5 before:w-10 before:bg-blue"></div>
           <div className="flex my-8 mr-8">
-            <div className="flex mr-4 max-w-min">
+            <div className="flex mr-4">
               <Image
                 className="self-start max-w-max"
                 src={penIcon}
@@ -116,8 +116,6 @@ export default function FrontSkills() {
           <div className="mt-8">
             <ProgressBar title="React Native" percent={10}  icon={require('@/public/react-native.svg')}/>
           </div>
-        
-          
         </article>
       </div>
     </section>

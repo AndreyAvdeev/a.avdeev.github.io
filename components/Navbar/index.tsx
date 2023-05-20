@@ -15,7 +15,7 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className="pointer-events-auto hidden md:block">
+    <nav className="z-20 pointer-events-auto hidden md:block">
       <ul className="flex font-poppins text-lg">
         {nav.map((el, index) => {
           return (
