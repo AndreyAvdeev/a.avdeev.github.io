@@ -13,6 +13,7 @@ type elements = {
   title: string;
   link?: string;
   target?: string;
+  icon?: any
 };
 
 interface cardImageProps {
@@ -58,7 +59,7 @@ export default function CardImage({
                   href={el.link || "#"}
                   onClick={() => !el.link && openImageViewer(0)}
                 >
-                  {el.title}
+                {el.icon &&  <Image src={el.icon} alt="logo"/>}  {el.title}
                 </Link>
               ) : (
                 <a
