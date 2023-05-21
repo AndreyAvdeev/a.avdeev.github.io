@@ -72,6 +72,35 @@ export default function Portfolio() {
                 ]}
               />
             </div>
+            <div>
+              <CardImage
+                preview={require("@/public/preview/raidowallet_app_prev.png")}
+                images={[
+                  "gallery/raidowallet_app_1.png",
+                  "gallery/raidowallet_app_2.png",
+                  "gallery/raidowallet_app_3.png",
+                  "gallery/raidowallet_app_4.png",
+                  "gallery/raidowallet_app_5.png",
+                  "gallery/raidowallet_app_6.png",
+                  "gallery/raidowallet_app_7.png",
+                ]}
+                hoverElements={[
+                  {
+                    title: "",
+                    link: "https://play.google.com/store/apps/details?id=com.raido_wallet",
+                    target: "_blank",
+                    icon: require("@/public/android.svg")
+                  },
+                  { title: "Gallery" },
+                  {
+                    title: "",
+                    link: "https://apps.apple.com/us/app/raido-crypto-wallet/id1536567791",
+                    target: "_blank",
+                    icon: require("@/public/apple.svg")
+                  },
+                ]}
+              />
+            </div>
           </div>
         </article>
       </div>
