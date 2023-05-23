@@ -10,16 +10,13 @@ export default function Footer() {
         <div className="pt-3">
           <ul className="flex font-poppins text-lg items-center">
             <li className="inline-block text-center text-gray-300 mx-7 hover:text-white cursor-pointer transition">
-              <a href="" />
-              Facebook
+              <a href="https://vk.com/id66088016" target="_blank">VK</a>
             </li>
             <li className="inline-block text-center text-gray-300 mx-7 hover:text-white cursor-pointer transition">
-              <a href="" />
-              Instagram
+              <a href="https://www.facebook.com/andrey.avdeev.5011" target="_blank">Facebook</a>
             </li>
             <li className="inline-block text-center text-gray-300 mx-7 hover:text-white cursor-pointer transition">
-              <a href="" />
-              Youtube
+              <a href="https://www.linkedin.com/in/andrey-avdeev-236778265" target="_blank">Linkedin</a>
             </li>
           </ul>
         </div>

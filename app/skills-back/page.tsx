@@ -14,14 +14,14 @@ export default function BackSkills() {
           Backend skills
         </h1>
       </div>
-      <div className="grid grid-cols-2 mx-20 my-6 ">
+      <div className="grid grid-cols-1 mx-20 my-6 md:grid-cols-2">
         <article>
           <h2 className="text-white font-bold text-2xl text-left">
             Co dělám ?
           </h2>
           <div className="h-0.5 bg-gray-450 w-24 before:content-[''] before:block before:h-0.5 before:w-10 before:bg-blue"></div>
           <div className="flex my-8 mr-8">
-            <div className="flex mr-4">
+          <div className="flex mr-4 min-w-[2rem] max-w-[2rem]">
               <Image
                 className="self-start max-w-max"
                 src={penIcon}
@@ -41,7 +41,7 @@ export default function BackSkills() {
             </div>
           </div>
           <div className="flex my-8 mr-8">
-            <div className="flex mr-4">
+          <div className="flex mr-4 min-w-[2rem] max-w-[2rem]">
               <Image
                 className="self-start max-w-max"
                 src={monitorIcon}
@@ -79,6 +79,9 @@ export default function BackSkills() {
           </div>
           <div className="mt-8">
             <ProgressBar title="Moleculer" percent={70} icon={require('@/public/moleculer.svg')}/>
+          </div>
+           <div className="mt-8">
+            <ProgressBar title="Docker" percent={50} icon={require('@/public/docker.svg')}/>
           </div>
         </article>
       </div>

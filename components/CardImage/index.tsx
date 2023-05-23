@@ -81,8 +81,8 @@ export default function CardImage({
           <ImageViewer
             src={images}
             currentIndex={currentImage}
-            disableScroll={false}
-            closeOnClickOutside={true}
+            disableScroll={true}
+            closeOnClickOutside={false}
             onClose={closeImageViewer}
           />
         </div>
