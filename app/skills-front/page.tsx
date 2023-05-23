@@ -15,13 +15,13 @@ export default function FrontSkills() {
           Frontend skills
         </h1>
       </div>
-      <div className="grid grid-cols-1 mx-20 my-6 md:grid-cols-2">
+      <div className="grid grid-cols-1 mx-5 my-6 md:grid-cols-2 md:mx-20">
         <article>
           <h2 className="text-white font-bold text-2xl text-left">
             Co dělám ?
           </h2>
           <div className="h-0.5 bg-gray-450 w-24 before:content-[''] before:block before:h-0.5 before:w-10 before:bg-blue"></div>
-          <div className="flex my-8 mr-8">
+          <div className="flex my-8 mr-0 md:mr-8">
             <div className="flex mr-4 min-w-[2rem] max-w-[2rem]">
               <Image
                 className="self-start max-w-max"
@@ -33,7 +33,7 @@ export default function FrontSkills() {
             </div>
             <div>
               <h3 className="text-white font-bold text-lg">UI / UX Design</h3>
-              <p className="text-gray-200 leading-7 mt-2 mr-5 mr-5">
+              <p className="text-gray-200 leading-7 mt-2 mr-5">
                 Je obecně známou věcí, že člověk bývá při zkoumání grafického
                 návrhu rozptylován okolním textem, pokud mu dává nějaký smysl.
                 Úkolem Lorem Ipsum je pak nahradit klasický smysluplný text
@@ -41,7 +41,7 @@ export default function FrontSkills() {
               </p>
             </div>
           </div>
-          <div className="flex my-8 mr-8">
+          <div className="flex my-8 mr-0 md:mr-8">
             <div className="flex mr-4 min-w-[2rem] max-w-[2rem]">
               <Image
                 className="self-start max-w-max"
@@ -63,7 +63,7 @@ export default function FrontSkills() {
               </p>
             </div>
           </div>
-          <div className="flex my-8 mr-8">
+          <div className="flex my-8 mr-0 md:mr-8">
             <div className="flex mr-4 min-w-[2rem] max-w-[2rem]">
               <Image
                 className="self-start max-w-max"

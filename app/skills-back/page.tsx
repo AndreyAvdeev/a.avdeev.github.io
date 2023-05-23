@@ -14,13 +14,13 @@ export default function BackSkills() {
           Backend skills
         </h1>
       </div>
-      <div className="grid grid-cols-1 mx-20 my-6 md:grid-cols-2">
+      <div className="grid grid-cols-1 mx-2.5 my-6 md:grid-cols-2 md:mx-20">
         <article>
           <h2 className="text-white font-bold text-2xl text-left">
             Co dělám ?
           </h2>
           <div className="h-0.5 bg-gray-450 w-24 before:content-[''] before:block before:h-0.5 before:w-10 before:bg-blue"></div>
-          <div className="flex my-8 mr-8">
+          <div className="flex my-8 mr-0 md:mr-8">
           <div className="flex mr-4 min-w-[2rem] max-w-[2rem]">
               <Image
                 className="self-start max-w-max"
@@ -40,7 +40,7 @@ export default function BackSkills() {
               </p>
             </div>
           </div>
-          <div className="flex my-8 mr-8">
+          <div className="flex my-8 mr-0 md:mr-8">
           <div className="flex mr-4 min-w-[2rem] max-w-[2rem]">
               <Image
                 className="self-start max-w-max"
