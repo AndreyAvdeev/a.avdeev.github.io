@@ -101,6 +101,27 @@ export default function Portfolio() {
                 ]}
               />
             </div>
+            <div>
+              <CardImage
+                preview={require("@/public/preview/trading_crm_prev.png")}
+                images={[
+                  "gallery/trading_crm_1.png",
+                  "gallery/trading_crm_2.png",
+                  "gallery/trading_crm_3.png",
+                  "gallery/trading_crm_4.png",
+                  "gallery/trading_crm_5.png",
+                  "gallery/trading_crm_6.png",
+                ]}
+                hoverElements={[
+                  {
+                    title: "Website",
+                    link: "https://digital.siera.tech/en/crm/login",
+                    target: "_blank",
+                  },
+                  { title: "Gallery" },
+                ]}
+              />
+            </div>
           </div>
         </article>
       </div>

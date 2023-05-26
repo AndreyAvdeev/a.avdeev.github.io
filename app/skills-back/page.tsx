@@ -14,7 +14,7 @@ export default function BackSkills() {
           Backend skills
         </h1>
       </div>
-      <div className="grid grid-cols-1 mx-2.5 my-6 md:grid-cols-2 md:mx-20">
+      <div className="grid grid-cols-1 mx-5 my-6 md:grid-cols-2 md:mx-20">
         <article>
           <h2 className="text-white font-bold text-2xl text-left">
             Co dělám ?
