@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { MobileNav } from "../MobileNav/MobileNav";
 
 export default function Navbar() {
   const router = usePathname();
@@ -15,7 +16,8 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className="z-20 pointer-events-auto hidden md:block">
+    <div className="z-20">
+    <nav className="hidden md:block">
       <ul className="flex font-poppins text-lg">
         {nav.map((el, index) => {
           return (
@@ -26,5 +28,7 @@ export default function Navbar() {
         })}
       </ul>
     </nav>
+        <MobileNav links={nav}/>
+    </div>
   );
 }
