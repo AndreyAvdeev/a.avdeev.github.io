@@ -18,7 +18,7 @@ export const MobileNav = ({ links }: MobileNavProps) => {
   const [isOpen, setOpening] = useState<boolean>(false);
 
   return (
-    <div className="flex justify-end md:hidden">
+    <div className="flex justify-end lg:hidden">
       <div
         className="z-10"
         onClick={() => {

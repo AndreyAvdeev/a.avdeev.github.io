@@ -17,7 +17,7 @@ export default function Navbar() {
 
   return (
     <div className="z-20">
-    <nav className="hidden md:block">
+    <nav className="hidden lg:block">
       <ul className="flex font-poppins text-lg">
         {nav.map((el, index) => {
           return (
