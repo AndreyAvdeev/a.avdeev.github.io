@@ -9,8 +9,8 @@ export default function Page() {
   const router = useRouter();
 
   return ( 
-    <div className="flex h-max items-center justify-center sm:h-screen px-4 mt-32 mb-28 sm:mt-0 sm:mb-0">
-      <div className="grid grid-cols-1 items-center justify-items-center w-11/12 m-auto max-w-7xl lg:grid-cols-[0.8fr,1fr]">
+    <div className="flex h-max items-center justify-center sm:h-screen px-4 mt-20 mb-28 sm:mt-0 sm:mb-0">
+      <div className="grid grid-cols-1 items-center justify-items-center w-11/12 m-auto max-w-7xl py-[15%] lg:py-0 lg:grid-cols-[0.8fr,1fr]">
         <div className="rounded-full bg-gray-500 shadow-[0px_0px_50px_rgba(0,0,0,0.8)] h-80 w-80 flex items-center justify-center mb-6 lg:mb-0">
           <Image src={meIcon} alt="logo" height={290} width={290} />
         </div>
