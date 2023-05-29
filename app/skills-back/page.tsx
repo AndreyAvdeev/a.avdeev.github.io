@@ -21,13 +21,13 @@ export default function BackSkills() {
           </h2>
           <div className="h-0.5 bg-gray-450 w-24 before:content-[''] before:block before:h-0.5 before:w-10 before:bg-blue"></div>
           <div className="flex my-8 mr-0 md:mr-8">
-          <div className="flex mr-4 min-w-[2rem] max-w-[2rem]">
+          <div className="flex mr-3 min-w-[2rem] max-w-[2rem]">
               <Image
                 className="self-start max-w-max"
                 src={penIcon}
                 alt="logo"
-                height={32}
-                width={32}
+                height={25}
+                width={25}
               />
             </div>
             <div>
@@ -41,13 +41,13 @@ export default function BackSkills() {
             </div>
           </div>
           <div className="flex my-8 mr-0 md:mr-8">
-          <div className="flex mr-4 min-w-[2rem] max-w-[2rem]">
+          <div className="flex mr-3 min-w-[2rem] max-w-[2rem]">
               <Image
                 className="self-start max-w-max"
                 src={monitorIcon}
                 alt="logo"
-                height={32}
-                width={32}
+                height={25}
+                width={25}
               />
             </div>
             <div>
