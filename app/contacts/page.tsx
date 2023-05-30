@@ -1,23 +1,29 @@
 "use client";
 
 import style from "./style.module.scss";
-import { useEffect, useRef, useState } from "react";
+import { useRef, useState } from "react";
 import Image from "next/image";
 import emailIcon from "@/public/email.svg";
 
-
 export default function Contacts() {
-
+  const formRef = useRef<HTMLFormElement>(null);
   const emailFormRef = useRef<HTMLInputElement>(null);
   const nameFormRef = useRef<HTMLInputElement>(null);
   const textFormRef = useRef<HTMLTextAreaElement>(null);
 
   const [errors, setError] = useState<any>({});
+  const [isLoading, setLoading] = useState<boolean>(false);
+  const [isSuccess, setFormSuccess] = useState<boolean>(false);
 
   const validateEmail = (email: string) => {
     return email.match(
       /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
     );
+  };
+
+  const cleanFormData = () => {
+    setError([]);
+    formRef?.current?.reset();
   };
 
   const CheckError = (input) => {
@@ -80,16 +86,35 @@ export default function Contacts() {
           <div className="h-0.5 bg-gray-450 w-16 before:content-[''] before:block before:h-0.5 before:w-7 before:bg-blue"></div>
           <div className={style.contact_form}>
             <form
-              onSubmit={(e) => {
+              ref={formRef}
+              onSubmit={async (e) => {
                 e.stopPropagation();
                 e.preventDefault();
                 if (Object.values(errors).some((error) => error)) return;
+                setLoading(true);
                 let data = {
                   email: emailFormRef.current?.value,
                   email_text: textFormRef.current?.value,
                   name: nameFormRef.current?.value,
                 };
-                console.log(data);
+                let response = await fetch(
+                  "http://localhost:3000/api/email_form",
+                  {
+                    method: "POST",
+                    body: JSON.stringify({
+                      data,
+                    }),
+                    headers: {
+                      "content-type": "application/json",
+                    },
+                  }
+                );
+                let result = await response.json();
+                if (result) {
+                  setLoading(false);
+                  setFormSuccess(true);
+                  cleanFormData();
+                }
               }}
             >
               <div className="mt-6">
@@ -135,12 +160,19 @@ export default function Contacts() {
                 </p>
               </div>
               <div className="mt-2">
-                <button
-                  type="submit"
-                  className="bg-gray-400 w-full md:w-auto text-white py-2 px-16 rounded-full border-2 border-solid border-[#D5D5D5] hover:border-blue cursor-pointer transition"
-                >
-                  Send
-                </button>
+                {!isSuccess ? (
+                  <button
+                    disabled={isLoading}
+                    type="submit"
+                    className="bg-gray-400 w-full md:w-auto text-white py-2 px-16 rounded-full border-2 border-solid border-[#D5D5D5] hover:border-blue cursor-pointer transition"
+                  >
+                    Send
+                  </button>
+                ) : (
+                  <div className={style.contact_success_message + ' bg-gray-400 py-2 px-16 text-center rounded'}>
+                    <p>Your message has been successfully sent &#128077;</p>
+                  </div>
+                )}
               </div>
             </form>
           </div>

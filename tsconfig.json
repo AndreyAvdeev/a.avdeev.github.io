@@ -33,8 +33,8 @@
     "next-env.d.ts",
     ".next/types/**/*.ts",
     "**/*.ts",
-    "**/*.tsx"
-, "pages/_app.js"  ],
+    "**/*.tsx",
+    "pages/_app.js", "app/api/contact_form.js"  ],
   "exclude": [
     "node_modules"
   ]
