@@ -1,0 +1,42 @@
+.contact {
+  &_form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    input,
+    textarea {
+      background: none;
+      border: 2px solid #555555;
+      border-radius: 5px;
+      color: #fff;
+      padding: 1rem;
+      &::placeholder {
+        color: #ffffff80;
+      }
+      &:focus {
+        color: #fff;
+      }
+    }
+    input {
+      height: 53px;
+      &:-webkit-autofill,
+      &:-webkit-autofill:hover,
+      &:-webkit-autofill:focus,
+      &:-webkit-autofill:active {
+        -webkit-box-shadow: 0 0 0 30px #222222 inset !important;
+      }
+      &:-webkit-autofill {
+        -webkit-text-fill-color: #fff !important;
+      }
+    }
+    button {
+      &:disabled {
+        opacity: 0.1;
+        &:hover {
+          cursor: default;
+          border-color: #d5d5d5;
+        }
+      }
+    }
+  }
+}

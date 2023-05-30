@@ -15,7 +15,7 @@ export default function FrontSkills() {
           Frontend skills
         </h1>
       </div>
-      <div className="grid grid-cols-1 mx-5 my-6 md:grid-cols-2 md:mx-20">
+      <div className="grid grid-cols-1 mx-5 my-8 md:grid-cols-2 md:mx-20">
         <article>
           <h2 className="text-white font-bold text-2xl text-left">
             Co dělám ?
