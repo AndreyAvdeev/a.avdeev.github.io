@@ -5,6 +5,8 @@ import { useRef, useState } from "react";
 import Image from "next/image";
 import emailIcon from "@/public/email.svg";
 
+type reqStatusType = "pending" | "ok" | "fail";
+
 export default function Contacts() {
   const formRef = useRef<HTMLFormElement>(null);
   const emailFormRef = useRef<HTMLInputElement>(null);
@@ -13,7 +15,7 @@ export default function Contacts() {
 
   const [errors, setError] = useState<any>({});
   const [isLoading, setLoading] = useState<boolean>(false);
-  const [isSuccess, setFormSuccess] = useState<boolean>(false);
+  const [reqStatus, setReqStatus] = useState<reqStatusType>("pending");
 
   const validateEmail = (email: string) => {
     return email.match(
@@ -110,11 +112,13 @@ export default function Contacts() {
                   }
                 );
                 let result = await response.json();
-                if (result) {
-                  setLoading(false);
-                  setFormSuccess(true);
-                  cleanFormData();
+                if (!result?.data) {
+                  setReqStatus("fail");
+                  return;
                 }
+                setLoading(false);
+                setReqStatus("ok");
+                cleanFormData();
               }}
             >
               <div className="mt-6">
@@ -160,7 +164,7 @@ export default function Contacts() {
                 </p>
               </div>
               <div className="mt-2">
-                {!isSuccess ? (
+                {reqStatus === "pending" ? (
                   <button
                     disabled={isLoading}
                     type="submit"
@@ -169,8 +173,20 @@ export default function Contacts() {
                     Send
                   </button>
                 ) : (
-                  <div className={style.contact_success_message + ' bg-gray-400 py-2 px-16 text-center rounded'}>
-                    <p>Your message has been successfully sent &#128077;</p>
+                  <div
+                    className={
+                      style.contact_message +
+                      " bg-gray-400 py-2 px-16 text-center rounded"
+                    }
+                  >
+                    {reqStatus === "ok" && (
+                      <p className="text-blue">
+                        Your message has been successfully sent &#128077;
+                      </p>
+                    )}
+                    {reqStatus === "fail" && (
+                      <p className="text-red">Something went wrong &#128546;</p>
+                    )}
                   </div>
                 )}
               </div>
