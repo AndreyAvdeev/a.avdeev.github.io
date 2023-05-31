@@ -81,13 +81,13 @@ jobs:
         uses: actions/upload-pages-artifact@v1
         with:
           path: ./out 
-      - name: Store variables
-        run: |
-          cd out
-          touch .env
-          echo 'EMAIL_USER_NAME: ${{ secrets.EMAIL_USER_NAME }}' >> .env
-          echo `EMAIL_USER_PASS: ${{ secrets.EMAIL_USER_PASS }}` >> .env
-          echo `EMAIL_USER_NAME_TO: ${{ secrets.EMAIL_USER_NAME_TO }}` >> .env
+#       - name: Store variables
+#         run: |
+#           cd out
+#           touch .env
+#           echo 'EMAIL_USER_NAME: ${{ secrets.EMAIL_USER_NAME }}' >> .env
+#           echo `EMAIL_USER_PASS: ${{ secrets.EMAIL_USER_PASS }}` >> .env
+#           echo `EMAIL_USER_NAME_TO: ${{ secrets.EMAIL_USER_NAME_TO }}` >> .env
         
      
   # Deployment job
