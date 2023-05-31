@@ -27,7 +27,7 @@ jobs:
           npm run export
 
       - name: Deploy
-        uses: actions/actions-gh-pages@v3
+        uses: AndreyAvdeev/a.avdeev.github.io@v1.0
         with:
           deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
           publish_dir: ./out
