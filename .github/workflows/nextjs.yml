@@ -81,11 +81,20 @@ jobs:
         uses: actions/upload-pages-artifact@v1
         with:
           path: ./out
-        run: |
-        touch .env
-        echo 'EMAIL_USER_NAME=${{ secrets.EMAIL_USER_NAME }}' >> .env
-        echo 'EMAIL_USER_PASS=${{ secrets.EMAIL_USER_PASS }}' >> .env
-        echo 'EMAIL_USER_NAME_TO=${{ secrets.EMAIL_USER_NAME_TO }}' >> .env
+
+    steps:
+    - name: Make envfile
+      uses: actions/create-envfile@v1.3
+      with:
+        envkey_DEBUG: false
+        envkey_EMAIL_USER_NAME: ${{ secrets.EMAIL_USER_NAME }}
+        envkey_EMAIL_USER_NAME: ${{ secrets.EMAIL_USER_NAME }}
+        envkey_EMAIL_USER_PASS: ${{ secrets.EMAIL_USER_PASS }}
+        envkey_EMAIL_USER_NAME_TO: ${{ secrets.EMAIL_USER_NAME_TO }}
+        directory: out
+        file_name: .env
+        fail_on_empty: false
+     
   # Deployment job
   deploy:
     environment:
