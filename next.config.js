@@ -5,6 +5,7 @@ const assetPrefix = `/${repo}/`;
 const basePath = `/${repo}`;
 
 module.exports = {
+  output: 'export',
   images: {
     loader: "akamai",
     path: "",
