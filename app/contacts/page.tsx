@@ -99,7 +99,7 @@ export default function Contacts() {
                   email_text: textFormRef.current?.value,
                   name: nameFormRef.current?.value,
                 };
-                let response = await fetch(
+                let response = await fetch( 
                   'https://andreyavdeev.github.io/a.avdeev.github.io/api/email_form',
                   {
                     method: "POST",
