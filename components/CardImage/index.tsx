@@ -44,7 +44,7 @@ export default function CardImage({
     <>
       <div className={style.card_wrapper + " " + "flex relative"}>
         <div className={style.card + " " + "rounded"}>
-          {preview && <Image src={preview} alt="logo" />}
+          {preview && <Image src={preview} alt='preview image' />}
         </div>
         <div className={style.card_overlay}>
           <div className={style["card_overlay-content"]}>
@@ -59,7 +59,7 @@ export default function CardImage({
                   href={el.link || "#"}
                   onClick={() => !el.link && openImageViewer(0)}
                 >
-                {el.icon &&  <Image src={el.icon} alt="logo"/>}  {el.title}
+                {el.icon &&  <Image src={el.icon} alt='icon'/>}  {el.title}
                 </Link>
               ) : (
                 <a

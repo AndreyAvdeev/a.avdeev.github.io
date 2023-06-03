@@ -30,7 +30,7 @@ export default function Portfolio() {
                   {
                     title: "Website",
                     link: "https://raidofinance.eu/",
-                    target: "_blank",
+                    target: "_blank"
                   },
                   {
                     title: "Gallery",
@@ -89,14 +89,14 @@ export default function Portfolio() {
                     title: "",
                     link: "https://play.google.com/store/apps/details?id=com.raido_wallet",
                     target: "_blank",
-                    icon: require("@/public/android.svg")
+                    icon: require("@/public/android.svg"),
                   },
                   { title: "Gallery" },
                   {
                     title: "",
                     link: "https://apps.apple.com/us/app/raido-crypto-wallet/id1536567791",
                     target: "_blank",
-                    icon: require("@/public/apple.svg")
+                    icon: require("@/public/apple.svg"),
                   },
                 ]}
               />

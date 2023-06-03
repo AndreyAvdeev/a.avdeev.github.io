@@ -31,7 +31,7 @@ export default function ProgressBar({ title, percent, icon }: progressProps) {
       <div className="flex justify-between">
         <div className="flex items-center ">
           {icon && (
-            <Image className="mr-2" src={icon} alt="html logo" width={18} height={18} />
+            <Image className="mr-2" src={icon} alt={title} width={18} height={18} />
           )}
           <h1 className="text-white font-bold text-lg">{title}</h1>
         </div>
