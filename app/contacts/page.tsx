@@ -100,7 +100,7 @@ export default function Contacts() {
                   name: nameFormRef.current?.value,
                 };
                 let response = await fetch( 
-                  'https://andreyavdeev.github.io/a.avdeev.github.io/api/email_form',
+                  'https://a-avdeev-github-io.vercel.app//api/email_form',
                   {
                     method: "POST",
                     body: JSON.stringify({
