@@ -99,26 +99,21 @@ export default function Contacts() {
                   email_text: textFormRef.current?.value,
                   name: nameFormRef.current?.value,
                 };
-                let response = await fetch( 
-                  'https://a-avdeev-github-io.vercel.app//api/email_form',
-                  {
-                    method: "POST",
-                    body: JSON.stringify({
-                      data,
-                    }),
-                    headers: {
-                      "content-type": "application/json",
-                    },
+                try {
+                  let response = await fetch(
+                    `https://a-avdeev-github-io.vercel.app/api/email_form/?email=${data.email}&email_text=${data.email_text}&name=${data.name}`
+                  );
+                  let result = await response.json();
+                  if (!result?.data) {
+                    setReqStatus("fail");
+                    return;
                   }
-                );
-                let result = await response.json();
-                if (!result?.data) {
+                  setLoading(false);
+                  setReqStatus("ok");
+                  cleanFormData();
+                } catch (err) {
                   setReqStatus("fail");
-                  return;
                 }
-                setLoading(false);
-                setReqStatus("ok");
-                cleanFormData();
               }}
             >
               <div className="mt-6">

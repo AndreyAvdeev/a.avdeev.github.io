@@ -7,7 +7,7 @@ export default async function handler(
   res: NextApiResponse
 ) {
   try {
-    await sendEmail(req?.body?.data);
+    await sendEmail(req?.query);
     res.status(200).send({ data: "ok" });
   } catch (err) {
     res.status(500).send(err);
