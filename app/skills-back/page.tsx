@@ -25,7 +25,7 @@ export default function BackSkills() {
               <Image
                 className="self-start max-w-max"
                 src={penIcon}
-                alt="logo"
+                alt="pen icon"
                 height={25}
                 width={25}
               />
@@ -45,7 +45,7 @@ export default function BackSkills() {
               <Image
                 className="self-start max-w-max"
                 src={monitorIcon}
-                alt="logo"
+                alt="monitor icon"
                 height={25}
                 width={25}
               />

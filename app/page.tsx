@@ -3,7 +3,7 @@
 import { useRouter } from "next/navigation";
 import Image from "next/image";
 
-import meIcon from "@/public/me.png";
+import meIcon from "@/public/me.webp";
 
 export default function Page() {
   const router = useRouter();

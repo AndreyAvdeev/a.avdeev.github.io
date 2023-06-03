@@ -66,7 +66,7 @@ export default function Contacts() {
               <Image
                 className="self-center max-w-max"
                 src={emailIcon}
-                alt="logo"
+                alt="email icon"
                 height={25}
                 width={25}
               />

@@ -17,14 +17,14 @@ export default function Portfolio() {
           <div className="grid justify-items-center mt-8 gap-12 sm:grid-cols-1 md:grid-cols-2  lg:grid-cols-2 xl:grid-cols-3  2xl:grid-cols-5">
             <div>
               <CardImage
-                preview={require("@/public/preview/raidofinance_site_prev.png")}
+                preview={require("@/public/preview/raidofinance_site_prev.webp")}
                 images={[
-                  "gallery/raidofinance_site_1.png",
-                  "gallery/raidofinance_site_2.png",
-                  "gallery/raidofinance_site_3.png",
-                  "gallery/raidofinance_site_4.png",
-                  "gallery/raidofinance_site_5.png",
-                  "gallery/raidofinance_site_6.png",
+                  "gallery/raidofinance_site_1.webp",
+                  "gallery/raidofinance_site_2.webp",
+                  "gallery/raidofinance_site_3.webp",
+                  "gallery/raidofinance_site_4.webp",
+                  "gallery/raidofinance_site_5.webp",
+                  "gallery/raidofinance_site_6.webp",
                 ]}
                 hoverElements={[
                   {
@@ -40,8 +40,8 @@ export default function Portfolio() {
             </div>
             <div>
               <CardImage
-                preview={require("@/public/preview/raidowallet_prev.png")}
-                images={["gallery/raidowallet_1.png"]}
+                preview={require("@/public/preview/raidowallet_prev.webp")}
+                images={["gallery/raidowallet_1.webp"]}
                 hoverElements={[
                   {
                     title: "Website",
@@ -54,13 +54,13 @@ export default function Portfolio() {
             </div>
             <div>
               <CardImage
-                preview={require("@/public/preview/raido-acquiring_prev.png")}
+                preview={require("@/public/preview/raido-acquiring_prev.webp")}
                 images={[
-                  "gallery/raido-acquiring_1.png",
-                  "gallery/raido-acquiring_2.png",
-                  "gallery/raido-acquiring_3.png",
-                  "gallery/raido-acquiring_4.png",
-                  "gallery/raido-acquiring_5.png",
+                  "gallery/raido-acquiring_1.webp",
+                  "gallery/raido-acquiring_2.webp",
+                  "gallery/raido-acquiring_3.webp",
+                  "gallery/raido-acquiring_4.webp",
+                  "gallery/raido-acquiring_5.webp",
                 ]}
                 hoverElements={[
                   {
@@ -74,15 +74,15 @@ export default function Portfolio() {
             </div>
             <div>
               <CardImage
-                preview={require("@/public/preview/raidowallet_app_prev.png")}
+                preview={require("@/public/preview/raidowallet_app_prev.webp")}
                 images={[
-                  "gallery/raidowallet_app_1.png",
-                  "gallery/raidowallet_app_2.png",
-                  "gallery/raidowallet_app_3.png",
-                  "gallery/raidowallet_app_4.png",
-                  "gallery/raidowallet_app_5.png",
-                  "gallery/raidowallet_app_6.png",
-                  "gallery/raidowallet_app_7.png",
+                  "gallery/raidowallet_app_1.webp",
+                  "gallery/raidowallet_app_2.webp",
+                  "gallery/raidowallet_app_3.webp",
+                  "gallery/raidowallet_app_4.webp",
+                  "gallery/raidowallet_app_5.webp",
+                  "gallery/raidowallet_app_6.webp",
+                  "gallery/raidowallet_app_7.webp",
                 ]}
                 hoverElements={[
                   {
@@ -103,14 +103,14 @@ export default function Portfolio() {
             </div>
             <div>
               <CardImage
-                preview={require("@/public/preview/trading_crm_prev.png")}
+                preview={require("@/public/preview/trading_crm_prev.webp")}
                 images={[
-                  "gallery/trading_crm_1.png",
-                  "gallery/trading_crm_2.png",
-                  "gallery/trading_crm_3.png",
-                  "gallery/trading_crm_4.png",
-                  "gallery/trading_crm_5.png",
-                  "gallery/trading_crm_6.png",
+                  "gallery/trading_crm_1.webp",
+                  "gallery/trading_crm_2.webp",
+                  "gallery/trading_crm_3.webp",
+                  "gallery/trading_crm_4.webp",
+                  "gallery/trading_crm_5.webp",
+                  "gallery/trading_crm_6.webp",
                 ]}
                 hoverElements={[
                   {
