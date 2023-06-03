@@ -24,7 +24,7 @@
     z-index: -1;
     transition: all 300ms ease-in-out;
     &.opened {
-      backdrop-filter: blur(10px);
+      background: #020202cc;
       display: block;
       opacity: 1;
     }
