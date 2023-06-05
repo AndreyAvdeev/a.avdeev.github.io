@@ -8,7 +8,7 @@ import meIcon from "@/public/me.webp";
 export default function Page() {
   const router = useRouter();
 
-  return ( 
+  return (
     <div className="flex h-max items-center justify-center sm:h-screen px-4 mt-20 mb-28 sm:mt-0 sm:mb-0">
       <div className="grid grid-cols-1 items-center justify-items-center w-11/12 m-auto max-w-7xl py-[15%] lg:py-0 lg:grid-cols-[0.8fr,1fr]">
         <div className="rounded-full bg-gray-500 shadow-[0px_0px_50px_rgba(0,0,0,0.8)] h-80 w-80 flex items-center justify-center mb-6 lg:mb-0">
@@ -20,11 +20,9 @@ export default function Page() {
           </p>
           <h1 className="text-white text-7xl mt-4">Andrey Avdeev</h1>
           <p className="text-white text-lg mt-4">
-            Hi! &#128075;, vytvořit webové stránky ? Při tvorbě webových  stránek
-            zajišťuji celkový design od návrhu až po realizaci. Perfektní
-            technickou stránku zajistišťuji též, aby všechno běželo přesně jak
-            má. Kdyby by Vás mé portofilo přípradně zkušenosti zaujaly - napište
-            mi !
+            Hi! &#128075;, I am Fullstack Developer with 4 years of experience
+            in designing, developing front-end web applications and mobile apps
+            in the financial industry with 1 year in backend developing.
           </p>
           <div className="mt-8 lg:mt-4 max-[420px]:flex-col max-[640px]:flex max-[640px]:justify-evenly">
             <button
