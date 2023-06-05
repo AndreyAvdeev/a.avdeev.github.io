@@ -1,5 +1,6 @@
 "use client";
 
+import style from "./styles/style.module.scss";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
 
@@ -15,9 +16,11 @@ export default function Page() {
           <Image src={meIcon} alt="logo" height={290} width={290} />
         </div>
         <div className="flex flex-col pr-0 md:w-50 lg:w-100 xl:w-30 text-center lg:text-left lg:pr-10">
-          <p className="font-poppins text-lg text-gray-300">
-            Full Stack Developer
+          <div className="flex justify-center lg:justify-start">
+          <p className={style.typewriter + ' font-poppins text-lg text-gray-300'}>
+            FullStack Developer
           </p>
+          </div>
           <h1 className="text-white text-7xl mt-4">Andrey Avdeev</h1>
           <p className="text-white text-lg mt-4">
             Hi! &#128075;, I am Fullstack Developer with 4 years of experience
