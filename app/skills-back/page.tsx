@@ -69,19 +69,19 @@ export default function BackSkills() {
           </h2>
           <div className="h-0.5 bg-gray-450 w-16 before:content-[''] before:block before:h-0.5 before:w-7 before:bg-blue"></div>
           <div className="mt-8">
-            <ProgressBar title="NodeJS" percent={33} icon={require('@/public/nodejs.svg')}/>
+            <ProgressBar title="NodeJS" percent={80} icon={require('@/public/nodejs.svg')}/>
           </div>
           <div className="mt-8">
-            <ProgressBar title="MYSQL" percent={70} icon={require('@/public/mysql.svg')}/>
+            <ProgressBar title="MYSQL" percent={50} icon={require('@/public/mysql.svg')}/>
           </div>
           <div className="mt-8">
             <ProgressBar title="ORM's (sequalize, knex)" percent={70} icon={require('@/public/orm.png')}/>
           </div>
           <div className="mt-8">
-            <ProgressBar title="Moleculer" percent={70} icon={require('@/public/moleculer.svg')}/>
+            <ProgressBar title="Moleculer" percent={40} icon={require('@/public/moleculer.svg')}/>
           </div>
            <div className="mt-8">
-            <ProgressBar title="Docker" percent={50} icon={require('@/public/docker.svg')}/>
+            <ProgressBar title="Docker" percent={70} icon={require('@/public/docker.svg')}/>
           </div>
         </article>
       </div>

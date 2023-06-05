@@ -34,10 +34,8 @@ export default function FrontSkills() {
             <div>
               <h3 className="text-white font-bold text-lg">UI / UX Design</h3>
               <p className="text-gray-200 leading-7 mt-2 mr-5">
-                Je obecně známou věcí, že člověk bývá při zkoumání grafického
-                návrhu rozptylován okolním textem, pokud mu dává nějaký smysl.
-                Úkolem Lorem Ipsum je pak nahradit klasický smysluplný text
-                vhodnou bezvýznamovou alternativou
+                Collaborated with the UX/UI design teams to improve the website
+                and applications, increasing conversion rates
               </p>
             </div>
           </div>
@@ -94,21 +92,21 @@ export default function FrontSkills() {
           <div className="mt-8">
             <ProgressBar
               title="HTML"
-              percent={100}
+              percent={98}
               icon={require("@/public/html.svg")}
             />
           </div>
           <div className="mt-8">
             <ProgressBar
               title="Javascript"
-              percent={76}
+              percent={95}
               icon={require("@/public/javascript.svg")}
             />
           </div>
           <div className="mt-8">
             <ProgressBar
               title="Typescript"
-              percent={76}
+              percent={40}
               icon={require("@/public/typescript.svg")}
             />
           </div>
@@ -122,7 +120,7 @@ export default function FrontSkills() {
           <div className="mt-8">
             <ProgressBar
               title="Next.js"
-              percent={98}
+              percent={40}
               icon={require("@/public/nextjs.svg")}
             />
           </div>
