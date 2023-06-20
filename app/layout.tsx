@@ -1,4 +1,6 @@
 import "./styles/globals.css";
+
+import Script from "next/script";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -40,6 +42,18 @@ export default function RootLayout({
         <meta name="msapplication-TileColor" content="#da532c" />
         <meta name="theme-color" content="#ffffff"></meta>
       </head>
+      <Script
+        async
+        src="https://www.googletagmanager.com/gtag/js?id=G-02MRR3FH1N"
+      />
+      <Script id="google-analytics">
+        {`
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-02MRR3FH1N');
+        `}
+      </Script>
       <body className="bg-dark">
         <Header />
         <main>{children}</main>

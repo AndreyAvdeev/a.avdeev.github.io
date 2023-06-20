@@ -25,7 +25,7 @@ export default function Page() {
           <p className="text-white text-lg mt-4">
             Hi! &#128075;, I am Fullstack Developer with 4 years of experience
             in designing, developing front-end web applications and mobile apps
-            in the financial industry with 1 year in backend developing.
+            in the financial industry with 1 year in backend development.
           </p>
           <div className="mt-8 lg:mt-4 max-[420px]:flex-col max-[640px]:flex max-[640px]:justify-evenly">
             <button
