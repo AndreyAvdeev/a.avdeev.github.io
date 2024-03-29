@@ -1,14 +1,14 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 
 import style from "../ProgressBar/style.module.css";
 
 interface progressProps {
   title: string | "";
   percent: number;
-  icon?: string;
+  icon?: string | StaticImageData;
 }
 
 export default function ProgressBar({ title, percent, icon }: progressProps) {

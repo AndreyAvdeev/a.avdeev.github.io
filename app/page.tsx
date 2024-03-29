@@ -18,12 +18,12 @@ export default function Page() {
         <div className="flex flex-col pr-0 md:w-50 lg:w-100 xl:w-30 text-center lg:text-left lg:pr-10">
           <div className="flex justify-center lg:justify-start">
           <p className={style.typewriter + ' font-poppins text-lg text-gray-300'}>
-            FullStack Developer
+            Frontend developer
           </p>
           </div>
           <h1 className="text-white text-7xl mt-4">Andrey Avdeev</h1>
           <p className="text-white text-lg mt-4">
-            Hi! &#128075;, I am Fullstack Developer with 4 years of experience
+            Hi! &#128075;, I am Frontend developer with 6 years of experience
             in designing, developing front-end web applications and mobile apps
             in the financial industry with 1 year in backend development.
           </p>

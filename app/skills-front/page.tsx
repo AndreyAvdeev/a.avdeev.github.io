@@ -6,6 +6,15 @@ import ProgressBar from "@/components/ProgressBar";
 import crossPlatformIcon from "@/public/crossplatform.svg";
 import monitorIcon from "@/public/monitor.svg";
 import penIcon from "@/public/pen.svg";
+import typescriptIcon from "@/public/typescript.svg";
+import htmlIcon from "@/public/html.svg";
+import javascriptIcon from "@/public/javascript.svg";
+import reactIcon from "@/public/react.svg";
+import nextjsIcon from "@/public/nextjs.svg";
+import graphqlIcon from "@/public/graphql.svg";
+import cordovaIcon from "@/public/cordova.svg";
+import electronIcon from "@/public/electron.svg";
+import reactNativeIcon from "@/public/react-native.svg";
 
 export default function FrontSkills() {
   return (
@@ -52,9 +61,9 @@ export default function FrontSkills() {
             <div>
               <h3 className="text-white font-bold text-lg">UI Developing</h3>
               <p className="text-gray-200 leading-7 mt-2 mr-5">
-                Expertise in frontend developing with JS, TS, Bootstrap,
-                Tailwindcss, libraries such as React and Next.js for Web
-                applications (trade platforms, CRM).
+                Expertise in frontend developing with JS, TS, Bootstrap, MUI,
+                Tailwindcss, Styled components, libraries such as React and
+                Next.js for Web applications (trade platforms, CRM).
               </p>
             </div>
           </div>
@@ -86,59 +95,42 @@ export default function FrontSkills() {
           </h2>
           <div className="h-0.5 bg-gray-450 w-16 before:content-[''] before:block before:h-0.5 before:w-7 before:bg-blue"></div>
           <div className="mt-8">
-            <ProgressBar
-              title="HTML"
-              percent={95}
-              icon={require("@/public/html.svg")}
-            />
+            <ProgressBar title="HTML" percent={95} icon={htmlIcon} />
           </div>
           <div className="mt-8">
             <ProgressBar
               title="Javascript"
               percent={95}
-              icon={require("@/public/javascript.svg")}
+              icon={javascriptIcon}
             />
           </div>
           <div className="mt-8">
             <ProgressBar
               title="Typescript"
-              percent={40}
-              icon={require("@/public/typescript.svg")}
+              percent={50}
+              icon={typescriptIcon}
             />
           </div>
           <div className="mt-8">
-            <ProgressBar
-              title="React"
-              percent={95}
-              icon={require("@/public/react.svg")}
-            />
+            <ProgressBar title="React" percent={95} icon={reactIcon} />
           </div>
           <div className="mt-8">
-            <ProgressBar
-              title="Next.js"
-              percent={25}
-              icon={require("@/public/nextjs.svg")}
-            />
+            <ProgressBar title="Next.js" percent={25} icon={nextjsIcon} />
           </div>
           <div className="mt-8">
-            <ProgressBar
-              title="Cordova"
-              percent={98}
-              icon={require("@/public/cordova.svg")}
-            />
+            <ProgressBar title="GraphQL" percent={75} icon={graphqlIcon} />
           </div>
           <div className="mt-8">
-            <ProgressBar
-              title="Electron"
-              percent={95}
-              icon={require("@/public/electron.svg")}
-            />
+            <ProgressBar title="Cordova" percent={98} icon={cordovaIcon} />
+          </div>
+          <div className="mt-8">
+            <ProgressBar title="Electron" percent={95} icon={electronIcon} />
           </div>
           <div className="mt-8">
             <ProgressBar
               title="React Native"
               percent={10}
-              icon={require("@/public/react-native.svg")}
+              icon={reactNativeIcon}
             />
           </div>
         </article>

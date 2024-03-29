@@ -1,6 +1,6 @@
 import { NextApiResponse, NextApiRequest } from "next";
 
-const nodemailer = require("nodemailer");
+import nodemailer from "nodemailer";
 
 export default async function handler(
   req: NextApiRequest,
@@ -18,7 +18,7 @@ async function sendEmail(data) {
   const { email, email_text, name } = data;
 
   let transporter = nodemailer.createTransport({
-    host: 'smtp.mail.ru',
+    host: "smtp.mail.ru",
     port: 465,
     secure: true,
     auth: {
@@ -29,15 +29,16 @@ async function sendEmail(data) {
 
   let info = await transporter.sendMail({
     from: process.env.EMAIL_USER_NAME,
-    to: process.env.EMAIL_USER_NAME_TO, 
+    to: process.env.EMAIL_USER_NAME_TO,
     subject: "Message from a.avdeev.github.io",
-    html: '<!DOCTYPE html>'+
-    '<html><head><title>Appointment</title>'+
-    '</head><body><div>'+
-    `<p><b>Name:</b> ${name}</p>`+
-    `<b>Email: ${email}</b><br>\n`+
-    `<p>${email_text}</p>`+
-    '</div></body></html>',
+    html:
+      "<!DOCTYPE html>" +
+      "<html><head><title>Appointment</title>" +
+      "</head><body><div>" +
+      `<p><b>Name:</b> ${name}</p>` +
+      `<b>Email: ${email}</b><br>\n` +
+      `<p>${email_text}</p>` +
+      "</div></body></html>",
   });
   console.log("Message sent: %s", info.messageId);
   return info;

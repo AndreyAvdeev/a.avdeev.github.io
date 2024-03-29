@@ -3,8 +3,13 @@
 import ProgressBar from "@/components/ProgressBar";
 import Image from "next/image";
 
-import serverIcon from "@/public/server.svg";
 import automaticIcon from "@/public/automatic.svg";
+import serverIcon from "@/public/server.svg";
+import nodejsIcon from "@/public/nodejs.svg";
+import mysqlIcon from "@/public/mysql.svg";
+import ormIcon from "@/public/orm.png";
+import moleculerIcon from "@/public/moleculer.svg";
+import dockerIcon from "@/public/docker.svg";
 
 export default function BackSkills() {
   return (
@@ -16,7 +21,9 @@ export default function BackSkills() {
       </div>
       <div className="grid grid-cols-1 mx-5 my-8 md:grid-cols-2 md:mx-20">
         <article>
-          <h2 className="text-white font-bold text-2xl text-left">Experience</h2>
+          <h2 className="text-white font-bold text-2xl text-left">
+            Experience
+          </h2>
           <div className="h-0.5 bg-gray-450 w-24 before:content-[''] before:block before:h-0.5 before:w-10 before:bg-blue"></div>
           <div className="flex my-8 mr-0 md:mr-8">
             <div className="flex mr-3 min-w-[2rem] max-w-[2rem]">
@@ -63,39 +70,23 @@ export default function BackSkills() {
           </h2>
           <div className="h-0.5 bg-gray-450 w-16 before:content-[''] before:block before:h-0.5 before:w-7 before:bg-blue"></div>
           <div className="mt-8">
-            <ProgressBar
-              title="NodeJS"
-              percent={50}
-              icon={require("@/public/nodejs.svg")}
-            />
+            <ProgressBar title="NodeJS" percent={50} icon={nodejsIcon} />
           </div>
           <div className="mt-8">
-            <ProgressBar
-              title="MYSQL"
-              percent={30}
-              icon={require("@/public/mysql.svg")}
-            />
+            <ProgressBar title="MYSQL" percent={30} icon={mysqlIcon} />
           </div>
           <div className="mt-8">
             <ProgressBar
               title="ORM's (sequalize, knex)"
               percent={30}
-              icon={require("@/public/orm.png")}
+              icon={ormIcon}
             />
           </div>
           <div className="mt-8">
-            <ProgressBar
-              title="Moleculer"
-              percent={25}
-              icon={require("@/public/moleculer.svg")}
-            />
+            <ProgressBar title="Moleculer" percent={25} icon={moleculerIcon} />
           </div>
           <div className="mt-8">
-            <ProgressBar
-              title="Docker"
-              percent={70}
-              icon={require("@/public/docker.svg")}
-            />
+            <ProgressBar title="Docker" percent={70} icon={dockerIcon} />
           </div>
         </article>
       </div>
